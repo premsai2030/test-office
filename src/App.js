@@ -1,9 +1,10 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useRef, useState } from "react";
 import { Canvas, useFrame } from "@react-three/fiber";
-import { OrbitControls, Environment, Html } from "@react-three/drei";
+import { OrbitControls, Environment } from "@react-three/drei";
 // import { Model } from "./S2wt_kamdo_industrial_divinities";
-import { Model } from "./test_model";
-import useTextToSpeech from "react-hook-text-to-speech";
+// import { Model } from "./test_model";
+import { Model } from "./Office";
+// import useTextToSpeech from "react-hook-text-to-speech";
 
 function Animate({ controls, lerping, to, target }) {
   useFrame(({ camera }, delta) => {
@@ -14,105 +15,105 @@ function Animate({ controls, lerping, to, target }) {
   });
 }
 
-function Buttons({ gotoAnnotation }) {
-  const obj = {
-    title: "Bathroom Sink",
-    description: "<p>Bathroom Sink is good for washing your hands</p>",
-    camPos: {
-      x: 0,
-      y: 30,
-      z: 0,
-    },
-    lookAt: {
-      x: 0,
-      y: 0,
-      z: 0,
-    },
-  };
-  return (
-    <Html position={[0, 3, 0]}>
-      <text
-        fontSize={17}
-        fontFamily="monospace"
-        style={{ cursor: "pointer" }}
-        onClick={() => {
-          gotoAnnotation(obj);
-        }}
-      >
-        top
-      </text>
-    </Html>
-  );
-}
+// function Buttons({ gotoAnnotation }) {
+//   const obj = {
+//     title: "Bathroom Sink",
+//     description: "<p>Bathroom Sink is good for washing your hands</p>",
+//     camPos: {
+//       x: 0,
+//       y: 30,
+//       z: 0,
+//     },
+//     lookAt: {
+//       x: 0,
+//       y: 0,
+//       z: 0,
+//     },
+//   };
+//   return (
+//     <Html position={[0, 3, 0]}>
+//       <text
+//         fontSize={17}
+//         fontFamily="monospace"
+//         style={{ cursor: "pointer" }}
+//         onClick={() => {
+//           gotoAnnotation(obj);
+//         }}
+//       >
+//         top
+//       </text>
+//     </Html>
+//   );
+// }
 
 function App() {
-  const convert = useTextToSpeech();
+  // const convert = useTextToSpeech();
   const ref = useRef();
   const [lerping, setLerping] = useState(false);
-  const [to, setTo] = useState();
-  const [target, setTarget] = useState();
+  const [to] = useState();
+  const [target] = useState();
   // const [selected, setSelected] = useState(-1);
-  const [startText, setStartText] = useState(false);
+  // const [startText, setStartText] = useState(false);
   // const [langauges, setLanguages] = useState(null);
-  const [speak, setSpeak] = useState(false);
-  const [speech, setSpeech] = useState("");
+  // const [speak, setSpeak] = useState(false);
+  // const [speech, setSpeech] = useState("");
 
-  useEffect(() => {
-    // if (langauges === null || langauges?.length === 0) {
-    //   if (langauges?.length === 0) {
-    //     const synthesis = window.speechSynthesis;
-    //     const voices = synthesis.getVoices();
-    //     const whatToSpeak = new window.SpeechSynthesisUtterance("book");
-    //     synthesis.voice = voices[1];
-    //     console.log(whatToSpeak);
-    //     whatToSpeak.pitch = 1;
-    //     whatToSpeak.rate = 1;
-    //     synthesis.cancel();
-    //     synthesis.speak(whatToSpeak);
-    //     console.log(synthesis);
-    //     setLanguages(voices);
-    //   } else {
-    //     setLanguages([]);
-    //   }
-    // }
+  // useEffect(() => {
+  //   // if (langauges === null || langauges?.length === 0) {
+  //   //   if (langauges?.length === 0) {
+  //   //     const synthesis = window.speechSynthesis;
+  //   //     const voices = synthesis.getVoices();
+  //   //     const whatToSpeak = new window.SpeechSynthesisUtterance("book");
+  //   //     synthesis.voice = voices[1];
+  //   //     console.log(whatToSpeak);
+  //   //     whatToSpeak.pitch = 1;
+  //   //     whatToSpeak.rate = 1;
+  //   //     synthesis.cancel();
+  //   //     synthesis.speak(whatToSpeak);
+  //   //     console.log(synthesis);
+  //   //     setLanguages(voices);
+  //   //   } else {
+  //   //     setLanguages([]);
+  //   //   }
+  //   // }
 
-    if (startText) {
-      const SpeechRecognition =
-        window.SpeechRecognition || window.webkitSpeechRecognition;
-      const speech = new SpeechRecognition();
-      speech.start();
-      speech.onresult = (e) => {
-        const results = e.results[0][0].transcript;
-        setSpeech(results);
-        // console.log(results);
-      };
+  //   if (startText) {
+  //     const SpeechRecognition =
+  //       window.SpeechRecognition || window.webkitSpeechRecognition;
+  //     const speech = new SpeechRecognition();
+  //     speech.start();
+  //     speech.onresult = (e) => {
+  //       const results = e.results[0][0].transcript;
+  //       setSpeech(results);
+  //       // console.log(results);
+  //     };
 
-      speech.onerror = function (e) {
-        // console.log("onerror", e);
-        speech.stop();
-        setStartText(false);
-      };
+  //     speech.onerror = function (e) {
+  //       // console.log("onerror", e);
+  //       speech.stop();
+  //       setStartText(false);
+  //     };
 
-      speech.onend = function () {
-        speech.stop();
-        setStartText(false);
-      };
-    }
-  }, [startText]);
+  //     speech.onend = function () {
+  //       speech.stop();
+  //       setStartText(false);
+  //     };
+  //   }
+  // }, [startText]);
 
-  useEffect(() => {
-    if (speak) {
-      convert(speech);
-      setSpeak(false);
-    }
-  }, [convert, speak, speech]);
+  // useEffect(() => {
+  //   if (speak) {
+  //     convert(speech);
+  //     setSpeak(false);
+  //   }
+  // }, [convert, speak, speech]);
 
-  function gotoAnnotation(values) {
-    setTo(values.camPos);
-    setTarget(values.lookAt);
-    // setSelected(values);
-    setLerping(true);
-  }
+  // function gotoAnnotation(values) {
+  //   setTo(values.camPos);
+  //   setTarget(values.lookAt);
+  //   // setSelected(values);
+  //   setLerping(true);
+  // }
   return (
     <div style={{ width: "100vw", height: "100vh" }}>
       <Canvas
@@ -160,7 +161,7 @@ function App() {
       </Stage> */}
         <Environment background preset="forest" blur={1} />
         <Model />
-        <Html position={[0, 2, 0]}>
+        {/* <Html position={[0, 2, 0]}>
           <button
             onClick={() => {
               setStartText(true);
@@ -176,9 +177,9 @@ function App() {
           >
             speak
           </button>
-        </Html>
+        </Html> */}
 
-        <Buttons gotoAnnotation={gotoAnnotation} />
+        {/* <Buttons gotoAnnotation={gotoAnnotation} /> */}
       </Canvas>
     </div>
   );
