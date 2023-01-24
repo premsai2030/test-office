@@ -192,8 +192,8 @@ export function Model(props) {
             rotation={[1.42, 1.13, -1.41]}
             scale={[0.29, 2, 2]}
           />
-        </group>
-        <group position={[-0.37, -0.12, 0]} scale={[0.06, 0.06, 0.26]}>
+        </group> */}
+        {/* <group position={[-0.37, -0.12, 0]} scale={[0.06, 0.06, 0.26]}>
           <mesh
             geometry={nodes.Cylinder035.geometry}
             material={materials["Material.008"]}
@@ -250,8 +250,8 @@ export function Model(props) {
             rotation={[1.42, 1.13, -1.41]}
             scale={[0.29, 2, 2]}
           />
-        </group>
-        <group position={[0.38, -0.12, 0]} scale={[0.06, 0.06, 0.26]}>
+        </group> */}
+        {/* <group position={[0.38, -0.12, 0]} scale={[0.06, 0.06, 0.26]}>
           <mesh
             geometry={nodes.Cylinder036.geometry}
             material={materials["Material.008"]}
@@ -308,8 +308,8 @@ export function Model(props) {
             rotation={[1.42, 1.13, -1.41]}
             scale={[0.29, 2, 2]}
           />
-        </group>
-        <group position={[0.75, 0.25, 0]} scale={[0.06, 0.06, 0.26]}>
+        </group> */}
+        {/* <group position={[0.75, 0.25, 0]} scale={[0.06, 0.06, 0.26]}>
           <mesh
             geometry={nodes.Cylinder040.geometry}
             material={materials["Material.008"]}
@@ -366,8 +366,8 @@ export function Model(props) {
             rotation={[1.42, 1.13, -1.41]}
             scale={[0.29, 2, 2]}
           />
-        </group>
-        <group position={[0, 0.25, 0]} scale={[0.06, 0.06, 0.26]}>
+        </group> */}
+        {/* <group position={[0, 0.25, 0]} scale={[0.06, 0.06, 0.26]}>
           <mesh
             geometry={nodes.Cylinder041.geometry}
             material={materials["Material.008"]}
@@ -424,8 +424,8 @@ export function Model(props) {
             rotation={[1.42, 1.13, -1.41]}
             scale={[0.29, 2, 2]}
           />
-        </group>
-        <group position={[-0.74, 0.25, 0]} scale={[0.06, 0.06, 0.26]}>
+        </group> */}
+        {/* <group position={[-0.74, 0.25, 0]} scale={[0.06, 0.06, 0.26]}>
           <mesh
             geometry={nodes.Cylinder042.geometry}
             material={materials["Material.008"]}
@@ -482,8 +482,8 @@ export function Model(props) {
             rotation={[1.42, 1.13, -1.41]}
             scale={[0.29, 2, 2]}
           />
-        </group>
-        <group position={[-0.37, 0.63, 0]} scale={[0.06, 0.06, 0.26]}>
+        </group> */}
+        {/* <group position={[-0.37, 0.63, 0]} scale={[0.06, 0.06, 0.26]}>
           <mesh
             geometry={nodes.Cylinder043.geometry}
             material={materials["Material.008"]}
@@ -540,8 +540,8 @@ export function Model(props) {
             rotation={[1.42, 1.13, -1.41]}
             scale={[0.29, 2, 2]}
           />
-        </group>
-        <group position={[0.38, 0.63, 0]} scale={[0.06, 0.06, 0.26]}>
+        </group> */}
+        {/* <group position={[0.38, 0.63, 0]} scale={[0.06, 0.06, 0.26]}>
           <mesh
             geometry={nodes.Cylinder044.geometry}
             material={materials["Material.008"]}
@@ -601,14 +601,14 @@ export function Model(props) {
         </group> */}
       </group>
       <group position={[85.75, 64.17, -40.89]} scale={[4.64, 2, 1]}>
-        {/* <mesh geometry={nodes.Cube.geometry} material={materials.Material} />
-        <mesh geometry={nodes.Cube_1.geometry} material={materials.Face} />
-        <mesh geometry={nodes.Cube_2.geometry} material={materials.Basement} />
-        <mesh
+        {/* <mesh geometry={nodes.Cube.geometry} material={materials.Material} /> */}
+        {/* <mesh geometry={nodes.Cube_1.geometry} material={materials.Face} /> */}
+        {/* <mesh geometry={nodes.Cube_2.geometry} material={materials.Basement} /> */}
+        {/* <mesh
           geometry={nodes.Cube_3.geometry}
           material={materials.Coffee_Bay_Door}
-        />
-        <mesh
+        /> */}
+        {/* <mesh
           geometry={nodes.Coffee001.geometry}
           material={materials.Coffee_Machine_Color}
           position={[0.76, -0.05, -0.14]}
@@ -685,8 +685,8 @@ export function Model(props) {
             rotation={[Math.PI / 2, 0, Math.PI]}
             scale={0.52}
           />
-        </mesh> */}
-        {/* <mesh
+        </mesh>
+        <mesh
           geometry={nodes.Coffee004.geometry}
           material={materials.Coffee_Machine_Color}
           position={[-0.36, -0.05, -0.14]}
@@ -711,8 +711,8 @@ export function Model(props) {
             rotation={[Math.PI / 2, 0, Math.PI]}
             scale={0.52}
           />
-        </mesh> */}
-        {/* <mesh
+        </mesh>
+        <mesh
           geometry={nodes.Coffee005.geometry}
           material={materials.Coffee_Machine_Color}
           position={[-0.72, -0.05, -0.14]}
@@ -744,43 +744,43 @@ export function Model(props) {
           position={[0.69, -0.54, -0.97]}
           rotation={[-Math.PI / 2, 1.57, 0]}
           scale={[0.04, 0.08, 0.02]}
-        /> */}
-        {/* <mesh
+        />
+        <mesh
           geometry={nodes.Coffee_Door_Oepner002.geometry}
           material={materials.Door_Opener}
           position={[0.38, -0.54, -0.97]}
           rotation={[-Math.PI / 2, 1.57, 0]}
           scale={[0.04, 0.08, 0.02]}
-        /> */}
-        {/* <mesh
+        />
+        <mesh
           geometry={nodes.Coffee_Door_Oepner003.geometry}
           material={materials.Door_Opener}
           position={[0.06, -0.54, -0.97]}
           rotation={[-Math.PI / 2, 1.57, 0]}
           scale={[0.04, 0.08, 0.02]}
-        /> */}
-        {/* <mesh
+        />
+        <mesh
           geometry={nodes.Coffee_Door_Oepner004.geometry}
           material={materials.Door_Opener}
           position={[-0.27, -0.54, -0.97]}
           rotation={[-Math.PI / 2, 1.57, 0]}
           scale={[0.04, 0.08, 0.02]}
-        /> */}
-        {/* <mesh
+        />
+        <mesh
           geometry={nodes.Coffee_Door_Oepner005.geometry}
           material={materials.Door_Opener}
           position={[-0.59, -0.54, -0.97]}
           rotation={[-Math.PI / 2, 1.57, 0]}
           scale={[0.04, 0.08, 0.02]}
-        /> */}
-        {/* <mesh
+        />
+        <mesh
           geometry={nodes.Coffee_Door_Oepner006.geometry}
           material={materials.Door_Opener}
           position={[-0.91, -0.54, -0.97]}
           rotation={[-Math.PI / 2, 1.57, 0]}
           scale={[0.04, 0.08, 0.02]}
-        /> */}
-        {/* <mesh
+        />
+        <mesh
           geometry={nodes.Text004.geometry}
           material={materials["Material.002"]}
           position={[-0.03, 0.56, -1.01]}
@@ -980,7 +980,7 @@ export function Model(props) {
           scale={[0.63, 0.28, 0.09]}
         />
       </mesh> */}
-      <group position={[0, 0, 58.23]} scale={[60, 0.2, 80]}>
+      <group position={[-60, 0, 80]} scale={[60, 0.2, 80]}>
         <mesh
           geometry={nodes.Cube028.geometry}
           material={materials.Table_Stand}
@@ -1130,7 +1130,7 @@ export function Model(props) {
         {/* <mesh
           geometry={nodes.Left_Wall.geometry}
           material={nodes.Left_Wall.material}
-          position={[-0.99, 99, 0]}
+          position={[-1, 99, 0]}
           rotation={[0, 0, -1.57]}
           scale={[100, 0, 1]}
         /> */}
